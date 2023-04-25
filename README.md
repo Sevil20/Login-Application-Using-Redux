@@ -343,3 +343,44 @@ Meet some of the outstanding companies that made it possible:
 ## License
 
 [MIT](LICENSE.md)
+
+
+<h1 align="center">💨 Add Tailwind CSS to Your Project</h1>
+
+
+## ➕ Adding Tailwind CSS
+
+This adder's codename is `tailwindcss`, and can be used like so:
+
+```
+npm install -D tailwindcss
+npx tailwindcss init
+```
+Add the paths to all of your template files in your tailwind.config.js file.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+### ⚙️ Options
+
+- Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+## 🛠 Using Tailwind CSS
+
+After the adder runs,
+
+- You can use Tailwind utility classes like `bg-blue-700` in the markup (components, routes, `app.html`).
+
+- You can look for <a href="https://tailwindcss.com/docs/installation">Tailwind CSS Documentation</a>
+
+THANKS!
