@@ -358,7 +358,10 @@ npx tailwindcss init
 ```
 Add the paths to all of your template files in your tailwind.config.js file.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+```
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -366,14 +369,16 @@ module.exports = {
   },
   plugins: [],
 }
-
+```
 ### ⚙️ Options
 
 - Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+```
 
 ## 🛠 Using Tailwind CSS
 
